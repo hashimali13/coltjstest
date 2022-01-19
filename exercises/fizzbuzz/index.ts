@@ -1,4 +1,3 @@
-"use strict";
 // --- Directions
 // Write a program that console logs the numbers
 // from 1 to n. But for multiples of three print
@@ -12,19 +11,20 @@
 //   fizz
 //   4
 //   buzz
-function fizzBuzz(n) {
-    for (let i = 1; i <= n; i++) {
-        if (i % 5 === 0 && i % 3 === 0) {
-            console.log('fizzbuzz');
+
+function fizzBuzz(n: number) {
+    for (let i=1; i<=n;i++){
+        if(i%5===0 && i%3===0){
+            console.log('fizzbuzz')
         }
-        else if (i % 5 === 0) {
-            console.log('buzz');
+        else if(i%5===0 ){
+            console.log('buzz')
         }
-        else if (i % 3 === 0) {
-            console.log('fizz');
+        else if(i%3===0){
+            console.log('fizz')
         }
-        else {
-            console.log(i);
+        else{
+            console.log(i)
         }
     }
 }
